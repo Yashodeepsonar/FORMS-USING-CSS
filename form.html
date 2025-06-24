@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <table>
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <p class="hint">Enter your first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td>
+                        <input type="text" name="surname" id="surname" required>
+                        <p class="hint">Enter your surname</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile number</label></td>
+                    <td>
+                        <input type="text" name="mobile" id="mobile">
+                        <p class="hint">Enter your mobile number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                        <p class="hint">Enter your email address</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>
+                        <input type="password" name="password" id="password" required>
+                        <p class="hint">Enter your password</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="confirmpassword">Confirm Password</label></td>
+                    <td>
+                        <input type="password" name="confirmpassword" id="confirmpassword" required>
+                        <p class="hint">Re-enter your password</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td>
+                        <input type="date" name="dob" id="dob">
+                        <p class="hint">Select your date of birth</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+                        <input type="radio" name="gender" value="other" id="other"> <label for="other">Others</label>
+                        <p class="hint">Select your gender</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country</label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                        <p class="hint">Choose your country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="resume">Upload Resume</label></td>
+                    <td>
+                        <input type="file" name="resume" id="resume">
+                        <p class="hint">Upload your resume file</p>
+                    </td>
+                </tr>      
+            </table>
+            <input type="reset" value="Reset">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Course Selection</b></legend>
+            <label for="course">Select Course </label> <br>
+            <select name="course" id="course">
+                <option value="FSWD">FSWD</option>
+                <option value="MERN">MERN</option>
+                <option value="DSA">DSA</option>
+            </select>
+            <p class="hint">Choose your course</p>
+            <br>
+            <label>Delivery Mode </label> <br>
+            <input type="radio" name="delivery" value="online" id="online"> <label for="online">ONLINE</label>
+            <input type="radio" name="delivery" value="offline" id="offline"> <label for="offline">OFFLINE</label>
+            <p class="hint">Select delivery mode</p>
+            <br>
+            <label for="comments">Comments </label><br>
+            <textarea name="comments" rows="4" cols="40" id="comments"></textarea>
+            <p class="hint">Add any comments (optional)</p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
